@@ -68,7 +68,7 @@ public final class BubbleSort {
    * @param str
    * @return Integer array.
    */
-  public static int[] strToIntArr(String str) {
+  public static int[] strToIntArr(final String str) {
     String[] splitArray = str.split(" ");
     int[] array = new int[splitArray.length];
 
@@ -103,7 +103,7 @@ public final class BubbleSort {
         }
       }
       // Check for making the sorting faster.
-      if (check == true) {
+      if (check) {
         break;
       }
     }
